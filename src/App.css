@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@500&display=swap');
+
+
+.App {
+  background: rgb(0, 0, 0);
+  background-size: 400% 400%;
+  animation: gradient 20s ease-in-out infinite;
+  height: auto;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.pankhl {
+  position: fixed;
+  z-index: 999988;
+  color: black;
+  top: 0px;
+  height: 120vh;
+  transition: 2s;
+  left: 0;
+  padding: 0;
+  overflow-y: auto;
+  object-fit: fill;
+}
+
+
+
+.pankhr {
+  width: 100%;
+  position: fixed;
+  z-index: 999988;
+  color: black;
+  top: 0px;
+  height: 120vh;
+  transition: 2s;
+  right: 0;
+  padding: 0;
+  overflow-y: auto;
+  object-fit: fill;
+}
+
+
+
+.green {
+  position: fixed;
+  background: green;
+  z-index: 999988;
+  color: black;
+  top: 64vh;
+  height: 300vh;
+  transition: 1s;
+  left: 0;
+  padding: 0;
+  overflow-y: auto;
+
+}
+
+.bansuri {
+  position: fixed;
+  z-index: 99999999;
+  display: block;
+  margin: 0 auto;
+  justify-content: space-around;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 250px;
+  top: 38%;
+  left: 0;
+  right: 0;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+
+.bansuri-text{
+  position: fixed;
+  z-index: 99999999;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  top: 60%;
+  left: 0;
+  right: 0;
+  color:#fff;
+  /* width: 20ch; */
+  font-size: 20px !important;
+  font-family: 'Noto Serif Devanagari', serif;
+}
+
+
+.flowers {
+  position: fixed;
+  z-index: 99999999;
+  display: block;
+  margin: 0 auto;
+  justify-content: space-around;
+  transform: translate(-50%, -50%);
+  width:50%;
+  height: 250px;
+  top: -20px;
+  left: 0;
+  animation-name: spin1;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.flowers1 {
+  content: "";
+  position: fixed;
+  z-index: 99999999;
+  display: block;
+  margin: 0 auto;
+  justify-content: space-around;
+  transform: translate(-50%, -50%);
+  width:50%;
+  height: 250px;
+  top: -20px;
+  right: 0;
+  animation-name: spin2;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.chakra_n {
+  position: fixed;
+  z-index: 9999999;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  top: 61%;
+  left: 50%;
+  right: 0;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(24, 24, 110);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+:root {
+  --effect: hover 1s linear infinite;
+}
+
+* {
+  margin: 0;
+}
+
+/* body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+} */
+div {
+  text-align: center;
+}
+
+.text{
+  transform: scale(.7);
+  font-size: 35px !important;
+    color: rgb(245, 245, 245);
+    -webkit-text-stroke: 0.5px rgb(0, 255, 64);
+    filter: drop-shadow(0 0 1px rgb(255, 255, 255))drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 25px red)hue-rotate(10turn);
+}
+
+.text-r{
+  transform: scale(.7);
+  font-size: 42px !important;
+    color: pink;
+    -webkit-text-stroke: 0.5px rgb(0, 255, 85);
+    filter: drop-shadow(0 0 1px rgb(255, 255, 255))drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 25px rgb(255, 94, 0))hue-rotate(10turn);
+}
+
+.text-b{
+  transform: scale(.7);
+  font-size: 40px !important;
+    color: pink;
+    -webkit-text-stroke: 0.5px blue;
+    filter: drop-shadow(0 0 1px rgb(255, 255, 255))drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 25px red)hue-rotate(10turn);
+}
+
+.text-g{
+  transform: scale(.7);
+  font-size: 40px !important;
+    color: pink;
+    -webkit-text-stroke: 0.5px green;
+    filter: drop-shadow(0 0 1px rgb(255, 255, 255))drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 25px red)hue-rotate(10turn);
+}
+
+p {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4em;
+  font-family: arial;
+  font-weight: 600;
+  transform: scale(.5);
+  color: #ffffff;
+  -webkit-text-stroke: 2px gray;
+}
+
+p:nth-child(1) {
+  animation: var(--effect);
+}
+
+p:nth-child(2) {
+  animation: var(--effect) .125s;
+}
+
+p:nth-child(3) {
+  animation: var(--effect) .25s;
+}
+
+p:nth-child(4) {
+  animation: var(--effect) .375s;
+}
+
+p:nth-child(5) {
+  animation: var(--effect) .5s;
+}
+
+p:nth-child(6) {
+  animation: var(--effect) .675s;
+}
+
+p:nth-child(7) {
+  animation: var(--effect) .75s;
+}
+
+p:nth-child(8) {
+  animation: var(--effect) .90s;
+}
+
+p:nth-child(9) {
+  animation: var(--effect) .60s;
+}
+
+@keyframes hover {
+  0% {
+    transform: scale(.5);
+    color: #ffffff;
+    -webkit-text-stroke: 2px rgb(114, 226, 114);
+  }
+
+  20% {
+    transform: scale(.7);
+    color: pink;
+    -webkit-text-stroke: 3px orange;
+    filter: drop-shadow(0 0 1px rgb(255, 255, 255))drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 25px red)hue-rotate(10turn);
+  }
+
+  50% {
+    transform: scale(.5);
+    color: #ffffff;
+    -webkit-text-stroke: 2px rgb(255, 248, 248);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width:768px) {
+
+  .bansuri {
+    position: fixed;
+    z-index: 99999999;
+    margin: 0 auto;
+    justify-content: space-around;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 160px;
+    top: 30%;
+    left: 0;
+    right: 0;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+  }
+
+  .bansuri-text{
+    position: fixed;
+    z-index: 99999999;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    top: 48%;
+    left: 0;
+    right: 0;
+    color:#fff;
+    font-size: 20px !important;
+    font-family: 'Noto Serif Devanagari', serif;
+  }
+
+  
+.pankhl {
+  width: 50%;
+  position: fixed;
+  z-index: 999988;
+  color: black;
+  top: 0px;
+  height: 120vh;
+  transition: 2s;
+  left: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+
+
+.pankhr {
+  width: 10%;
+  position: fixed;
+  z-index: 999988;
+  color: black;
+  top: 0px;
+  height: 120vh;
+  transition: 2s;
+  right: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+}
